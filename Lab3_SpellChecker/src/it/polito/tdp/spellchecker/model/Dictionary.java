@@ -61,9 +61,11 @@ public class Dictionary {
 	
 			RichWord p= new RichWord(s,trovato);
 			ptemp.add(p);
+			
 		}
 		return ptemp;
 	}
+	
 
 	/*public List<RichWord> spellCheckTextDichotomic(List<String> inputTextList){
 		List<RichWord> ptemp = new LinkedList<RichWord>();
