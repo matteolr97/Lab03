@@ -62,6 +62,7 @@ public class Dictionary {
 			RichWord p= new RichWord(s,trovato);
 			ptemp.add(p);
 			
+			
 		}
 		return ptemp;
 	}
