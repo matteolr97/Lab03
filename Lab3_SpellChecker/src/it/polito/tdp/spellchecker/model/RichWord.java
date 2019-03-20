@@ -6,6 +6,7 @@ public class RichWord {
 	private boolean giusto;
 	public RichWord(String parolaInserita, boolean giusto) {
 		this.parolaInserita = parolaInserita;
+		
 		this.giusto = giusto;
 	}
 	
