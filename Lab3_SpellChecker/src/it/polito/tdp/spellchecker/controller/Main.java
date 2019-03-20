@@ -12,21 +12,19 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("SpellChecker.fxml"));
-			BorderPane root = (BorderPane)loader.load(); root = (BorderPane)FXMLLoader.load(getClass().getResource("SpellChecker.fxml"));
+			BorderPane root = (BorderPane)loader.load(); 
+			//root = (BorderPane)FXMLLoader.load(getClass().getResource("SpellChecker.fxml"));
 			
-			
-			Dictionary model = new Dictionary();
 			SpellCheckerController controller = loader.getController();
-			
-			
+			Dictionary model = new Dictionary();
 			controller.setModel(model);
-			
-			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		
-			
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());			
 			primaryStage.setScene(scene);
 			primaryStage.show();
+						
+
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

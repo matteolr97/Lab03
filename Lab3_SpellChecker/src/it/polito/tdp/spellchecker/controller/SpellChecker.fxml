@@ -7,6 +7,8 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -24,7 +26,7 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="txtLanguage" prefHeight="28.0" prefWidth="172.0">
+                  <ComboBox fx:id="txtLanguage" onAction="#doLanguage" prefHeight="28.0" prefWidth="172.0">
                      <HBox.margin>
                         <Insets left="100.0" />
                      </HBox.margin>
@@ -60,12 +62,16 @@
             <HBox alignment="TOP_RIGHT">
                <children>
                   <TextField fx:id="txtError">
-                     <effect>
-                        <DropShadow />
-                     </effect>
                      <HBox.margin>
-                        <Insets right="50.0" />
+                        <Insets bottom="20.0" right="50.0" />
                      </HBox.margin>
+                     <effect>
+                        <MotionBlur>
+                           <input>
+                              <Shadow />
+                           </input>
+                        </MotionBlur>
+                     </effect>
                   </TextField>
                   <Button fx:id="btnClear" mnemonicParsing="false" onAction="#doClearText" text="Clear all" />
                </children>
