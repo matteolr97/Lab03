@@ -86,6 +86,7 @@ public class SpellCheckerController {
     	}
     	txtError.appendText("There are"+counter+" errors!");
 
+    	
     	txtTime.appendText(System.nanoTime()+"\n");
     	}
     

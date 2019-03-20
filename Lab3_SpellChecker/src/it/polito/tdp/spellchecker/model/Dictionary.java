@@ -46,7 +46,7 @@ public class Dictionary {
 		return parole;
 
 	}
-	/*public List<RichWord> spellCheckTextLinear(List<String> inputTextList){
+	public List<RichWord> spellCheckTextLinear(List<String> inputTextList){
 		List<RichWord> ptemp = new LinkedList<RichWord>();
 		boolean trovato = false;
 		
@@ -63,7 +63,15 @@ public class Dictionary {
 			ptemp.add(p);
 		}
 		return ptemp;
-	}*/
+	}
 
-
-}
+	/*public List<RichWord> spellCheckTextDichotomic(List<String> inputTextList){
+		List<RichWord> ptemp = new LinkedList<RichWord>();
+		int metaDizionario = dizionario.size()/2;
+		for (String s : inputTextList) {
+			RichWord parola = new RichWord(s);
+		for(int i=0; i<metaDizionario;i++) {
+		}
+	}
+	
+}*/}
